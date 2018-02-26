@@ -4,11 +4,15 @@ import com.ecuca.immunecircle.R;
 import com.ecuca.immunecircle.ui.base.BaseActPresenter;
 import com.ecuca.immunecircle.ui.base.BaseMvpActivity;
 
+import javax.inject.Inject;
+
 /**
  * 主页
  */
 public class MainActivity extends BaseMvpActivity implements MainView {
 
+    @Inject
+    MainPresenter presenter;
 
     @Override
     public void inJect() {
