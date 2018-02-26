@@ -21,4 +21,5 @@
     <string name="regist_input_code_et_hint">输入验证码</string>
     <string name="regist_send_code_toast1_tv">我们已发送</string>
     <string name="regist_send_code_toast2_tv">到您的手机：</string>
+    <string name="regist_next_step">下一步</string>
 </resources>
