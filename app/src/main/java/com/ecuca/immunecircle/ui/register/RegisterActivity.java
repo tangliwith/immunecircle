@@ -1,6 +1,7 @@
 package com.ecuca.immunecircle.ui.register;
 
 import com.ecuca.immunecircle.R;
+import com.ecuca.immunecircle.app.MyApplication;
 import com.ecuca.immunecircle.ui.base.BaseActPresenter;
 import com.ecuca.immunecircle.ui.base.BaseMvpActivity;
 
@@ -11,7 +12,8 @@ public class RegisterActivity extends BaseMvpActivity implements RegisterView {
 
     @Override
     public void inJect() {
-
+        MyApplication.app.createActivityComponent(this);
+        MyApplication.app.getActivityComponent().inJect(this);
     }
 
     @Override

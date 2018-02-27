@@ -1,6 +1,7 @@
 package com.ecuca.immunecircle.ui.main;
 
 import com.ecuca.immunecircle.R;
+import com.ecuca.immunecircle.app.MyApplication;
 import com.ecuca.immunecircle.ui.base.BaseActPresenter;
 import com.ecuca.immunecircle.ui.base.BaseMvpActivity;
 
@@ -16,12 +17,13 @@ public class MainActivity extends BaseMvpActivity implements MainView {
 
     @Override
     public void inJect() {
-
+        MyApplication.app.createActivityComponent(this);
+        MyApplication.app.getActivityComponent().inJect(this);
     }
 
     @Override
     public BaseActPresenter initPresenter() {
-        return null;
+        return presenter;
     }
 
     @Override
