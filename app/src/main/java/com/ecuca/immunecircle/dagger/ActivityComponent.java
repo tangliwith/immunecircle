@@ -7,6 +7,7 @@ import com.ecuca.immunecircle.ui.main.MainActivity;
 import com.ecuca.immunecircle.ui.register.RegisterActivity;
 import com.ecuca.immunecircle.ui.splash.SplashAct;
 import com.ecuca.immunecircle.ui.user.UserProtocolAct;
+import com.ecuca.immunecircle.ui.wellcome.WelcomeGuideActivity;
 
 import dagger.Subcomponent;
 
@@ -36,4 +37,6 @@ public interface ActivityComponent {
     //用户协议页面
     void inJect(UserProtocolAct act);
 
+    //引导页面
+    void inJect(WelcomeGuideActivity act);
 }

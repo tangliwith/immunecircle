@@ -38,5 +38,8 @@
     <color name="link_2">#FFA83C</color>
     <color name="link_3">#FF6B57</color>
 
+    <color name="login_regist_tv">#E70012</color>
+    <color name="login_login_btn_borld">#E60012</color>
+
     <color name="partTranslucent">#39000000</color>
 </resources>
