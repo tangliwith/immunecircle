@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/white"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
 
-    <include layout="@layout/layout_title"/>
+    <include layout="@layout/layout_title" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/text_grayf7">
+        android:layout_height="match_parent">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -30,7 +29,7 @@
                 android:paddingLeft="10dp"
                 android:textColor="@color/text_gray333"
                 android:textColorHint="#BBBBBB"
-                android:textSize="@dimen/text_size_15"/>
+                android:textSize="@dimen/text_size_15" />
         </ScrollView>
 
         <TextView
@@ -46,6 +45,6 @@
             android:gravity="center"
             android:text="发送验证码"
             android:textColor="#E60012"
-            android:textSize="@dimen/text_size_18"/>
+            android:textSize="@dimen/text_size_18" />
     </RelativeLayout>
 </LinearLayout>

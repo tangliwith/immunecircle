@@ -1,5 +1,6 @@
 package com.ecuca.immunecircle.ui.register.input;
 
+import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -50,8 +51,9 @@ public class RegistInputCodeActivity extends BaseMvpActivity implements RegistIn
 
     @Override
     public void initView() {
+        Bundle bundle = getIntent().getExtras();
         showTitleBack();
-        setTitleText("注册");
+        setTitleText(bundle.getString("type"));
     }
 
     @Override

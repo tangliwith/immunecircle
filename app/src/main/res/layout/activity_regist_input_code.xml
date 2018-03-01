@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/white"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
 
-    <include layout="@layout/layout_title"/>
+    <include layout="@layout/layout_title" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/text_grayf7">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/ll_code_toast"
@@ -25,21 +24,21 @@
                 android:layout_height="wrap_content"
                 android:text="我们已发送"
                 android:textColor="@color/text_gray666"
-                android:textSize="@dimen/text_size_15"/>
+                android:textSize="@dimen/text_size_15" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="验证码"
                 android:textColor="#E60012"
-                android:textSize="@dimen/text_size_15"/>
+                android:textSize="@dimen/text_size_15" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="到您的手机："
                 android:textColor="@color/text_gray666"
-                android:textSize="@dimen/text_size_15"/>
+                android:textSize="@dimen/text_size_15" />
 
         </LinearLayout>
 
@@ -51,7 +50,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="19dp"
             android:text="188****6698"
-            android:textSize="@dimen/text_size_30"/>
+            android:textSize="@dimen/text_size_30" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -72,7 +71,7 @@
                 android:paddingLeft="10dp"
                 android:textColor="@color/text_gray333"
                 android:textColorHint="#BBBBBB"
-                android:textSize="@dimen/text_size_15"/>
+                android:textSize="@dimen/text_size_15" />
 
             <TextView
                 android:id="@+id/tv_regist_time"
@@ -83,7 +82,7 @@
                 android:layout_marginRight="43dp"
                 android:text="50s"
                 android:textColor="@color/text_gray666"
-                android:textSize="@dimen/text_size_15"/>
+                android:textSize="@dimen/text_size_15" />
 
             <LinearLayout
                 android:id="@+id/ll_code_input"
@@ -98,7 +97,7 @@
                 <View
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
-                    android:background="@color/text_gray666"/>
+                    android:background="@color/text_gray666" />
 
                 <TextView
                     android:id="@+id/tv_regist_get_code"
@@ -107,7 +106,7 @@
                     android:layout_marginStart="5dp"
                     android:text="获取验证码"
                     android:textColor="@color/text_gray666"
-                    android:textSize="@dimen/text_size_15"/>
+                    android:textSize="@dimen/text_size_15" />
             </LinearLayout>
         </RelativeLayout>
 
@@ -125,6 +124,6 @@
             android:gravity="center"
             android:text="下一步"
             android:textColor="#E60012"
-            android:textSize="@dimen/text_size_18"/>
+            android:textSize="@dimen/text_size_18" />
     </RelativeLayout>
 </LinearLayout>
