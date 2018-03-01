@@ -12,12 +12,15 @@ import java.util.List;
 public class ActivitySwitcher {
 
     public static List<BaseMvpActivity> activities = new ArrayList<BaseMvpActivity>();
+
     public static void addActivity(BaseMvpActivity activity) {
         activities.add(activity);
     }
+
     public static void removeActivity(BaseMvpActivity activity) {
         activities.remove(activity);
     }
+
     public static void finishAll() {
         for (BaseMvpActivity activity : activities) {
             if (!activity.isFinishing()) {
@@ -27,20 +30,21 @@ public class ActivitySwitcher {
     }
 
     public static void start(final Activity from,
-                             final Class<? extends Activity> to, final Bundle bundle) {
-        start(from, new Intent(from, to).putExtras(bundle));
-        from.finish();
+                             final Class<? extends Activity> to, final Bundle bundle, boolean isFinish) {
+        start(from, new Intent(from, to).putExtras(bundle), isFinish);
+
     }
 
     public static void start(final Activity from,
-                             final Class<? extends Activity> to) {
-        start(from, new Intent(from, to));
-        from.finish();
+                             final Class<? extends Activity> to, boolean isFinish) {
+        start(from, new Intent(from, to), isFinish);
     }
 
-    public static void start(final Activity from, final Intent intent) {
+    public static void start(final Activity from, final Intent intent, boolean isFinish) {
         from.startActivity(intent);
-        from.finish();
+        if (isFinish) {
+            from.finish();
+        }
 
     }
 

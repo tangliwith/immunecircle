@@ -5,6 +5,7 @@
               android:background="@color/white"
               android:orientation="vertical">
 
+    <include layout="@layout/layout_title"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

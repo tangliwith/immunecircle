@@ -49,16 +49,16 @@ public class SplashAct extends BaseMvpActivity implements SplashView {
 
     @Override
     public void jumpToGuide() {
-        ActivitySwitcher.start(SplashAct.this, WelcomeGuideActivity.class);
+        ActivitySwitcher.start(SplashAct.this, WelcomeGuideActivity.class, true);
     }
 
     @Override
     public void jumpToLogin() {
-        ActivitySwitcher.start(SplashAct.this, LoginActivity.class);
+        ActivitySwitcher.start(SplashAct.this, LoginActivity.class, true);
     }
 
     @Override
     public void jumpToMain() {
-        ActivitySwitcher.start(SplashAct.this, MainActivity.class);
+        ActivitySwitcher.start(SplashAct.this, MainActivity.class, true);
     }
 }

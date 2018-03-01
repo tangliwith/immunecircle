@@ -1,7 +1,8 @@
-package com.ecuca.immunecircle.ui.register;
+package com.ecuca.immunecircle.ui.register.input;
 
-import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ecuca.immunecircle.R;
@@ -15,13 +16,19 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * 注册
+ * 注册时输入验证码页面
  */
-public class RegisterActivity extends BaseMvpActivity implements RegisterView {
+public class RegistInputCodeActivity extends BaseMvpActivity implements RegistInputCodeView {
     @Inject
-    RegisterPresenter presenter;
-    @BindView(R.id.et_phone)
-    EditText etPhone;
+    RegistInputCodePresenter presenter;
+    @BindView(R.id.et_code)
+    EditText etCode;
+    @BindView(R.id.tv_regist_time)
+    TextView tvRegistTime;
+    @BindView(R.id.tv_regist_get_code)
+    TextView tvRegistGetCode;
+    @BindView(R.id.ll_code_input)
+    LinearLayout llCodeInput;
     @BindView(R.id.tv_regist_send_code)
     TextView tvRegistSendCode;
 
@@ -38,14 +45,13 @@ public class RegisterActivity extends BaseMvpActivity implements RegisterView {
 
     @Override
     public int initRootView() {
-        return R.layout.activity_register;
+        return R.layout.activity_regist_input_code;
     }
 
     @Override
     public void initView() {
-        Bundle bundle = getIntent().getExtras();
         showTitleBack();
-        setTitleText(bundle.getString("type"));
+        setTitleText("注册");
     }
 
     @Override
@@ -58,13 +64,13 @@ public class RegisterActivity extends BaseMvpActivity implements RegisterView {
 
     }
 
-    @OnClick(R.id.tv_regist_send_code)
-    public void onClick() {
-        String phone = etPhone.getText().toString().trim();
-        if (!MyApplication.app.isMobileNO(phone)) {
-            ToastMessage("请输入正确的手机号码");
-            return;
+    @OnClick({R.id.tv_regist_get_code, R.id.tv_regist_send_code})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.tv_regist_get_code:
+                break;
+            case R.id.tv_regist_send_code:
+                break;
         }
-        presenter.sendCode(phone);
     }
 }

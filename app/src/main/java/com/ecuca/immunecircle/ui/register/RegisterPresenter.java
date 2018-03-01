@@ -22,4 +22,11 @@ public class RegisterPresenter extends BaseActPresenter {
     public void attachView(BaseActView actView) {
         this.v = (RegisterView) actView;
     }
+
+    /**
+     * 发送短信验证码
+     */
+    public void sendCode(String phone) {
+
+    }
 }

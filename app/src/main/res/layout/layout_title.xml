@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/title_bg"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/app_title_top"
-    android:orientation="vertical">
+              android:id="@+id/title_bg"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/layout_title_rel"
@@ -27,10 +27,10 @@
                 android:id="@+id/img_title_left"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:scaleType="centerInside"
                 android:padding="5dp"
-                android:src="@mipmap/ic_launcher"
-                android:visibility="invisible" />
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_title_back"
+                android:visibility="invisible"/>
             <!-- 左边文字 -->
         </LinearLayout>
         <!-- 中间文字 -->
@@ -51,9 +51,9 @@
                 android:ellipsize="end"
                 android:singleLine="true"
                 android:text=""
-                android:textColor="@color/white"
+                android:textColor="@color/text_black"
                 android:textSize="@dimen/text_size_0"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <!-- 右边图标 -->
@@ -79,7 +79,7 @@
                     android:layout_height="35dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:scaleType="centerInside" />
+                    android:scaleType="centerInside"/>
                 <!-- 右边文字 -->
 
                 <TextView
@@ -92,10 +92,15 @@
                     android:gravity="center|right"
                     android:lines="1"
                     android:text=""
-                    android:textColor="@color/white"
+                    android:textColor="@color/text_black"
                     android:textSize="@dimen/text_size_15"
-                    android:visibility="invisible" />
+                    android:visibility="invisible"/>
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"/>
 </LinearLayout>

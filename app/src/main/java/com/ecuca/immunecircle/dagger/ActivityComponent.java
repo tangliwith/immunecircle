@@ -4,6 +4,8 @@ package com.ecuca.immunecircle.dagger;
 import com.ecuca.immunecircle.ui.forget.ForgetPasswordActivity;
 import com.ecuca.immunecircle.ui.login.LoginActivity;
 import com.ecuca.immunecircle.ui.main.MainActivity;
+import com.ecuca.immunecircle.ui.register.end.RegistEndActivity;
+import com.ecuca.immunecircle.ui.register.input.RegistInputCodeActivity;
 import com.ecuca.immunecircle.ui.register.RegisterActivity;
 import com.ecuca.immunecircle.ui.splash.SplashAct;
 import com.ecuca.immunecircle.ui.user.UserProtocolAct;
@@ -39,4 +41,10 @@ public interface ActivityComponent {
 
     //引导页面
     void inJect(WelcomeGuideActivity act);
+
+    //注册-输入验证码页面
+    void inJect(RegistInputCodeActivity act);
+
+    //注册完成页面
+    void inJect(RegistEndActivity act);
 }

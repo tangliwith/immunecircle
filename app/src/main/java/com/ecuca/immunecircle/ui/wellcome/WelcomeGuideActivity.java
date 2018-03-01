@@ -92,7 +92,7 @@ public class WelcomeGuideActivity extends BaseMvpActivity implements WellcomeGui
     @Override
     public void onClick(View v) {
         if (v.getTag().equals("enter")) {
-            ActivitySwitcher.start(this, LoginActivity.class);
+            ActivitySwitcher.start(this, LoginActivity.class, false);
         } else {
             int position = (Integer) v.getTag();
             setCurView(position);

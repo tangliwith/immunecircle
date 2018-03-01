@@ -5,4 +5,8 @@ package com.ecuca.immunecircle.ui.login;
  */
 
 public interface LoginView {
+    //显示信息
+    void showMsg(String msg);
+    //成功后跳转
+    void jumpToMain();
 }
