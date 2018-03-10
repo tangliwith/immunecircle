@@ -8,7 +8,7 @@
     <color name="app_title_write">#FFFFFF</color>
     <color name="app_title_top">#ff37a5ed</color>
     <color name="bottom_text">#868686</color>
-    <color name="view_line">#ffdddddd</color>
+    <color name="view_line">#dddddd</color>
     <color name="text_gray1">#b2b2b2</color>
     <color name="text_gray2">#868686</color>
     <color name="text_gray3">#565656</color>
@@ -17,6 +17,7 @@
     <color name="text_blue">#37A5ED</color>
     <color name="text_money">#FF5000</color>
     <color name="text_gray333">#333333</color>
+    <color name="text_gray0101">#010101</color>
     <color name="text_gray666">#666666</color>
     <color name="text_gray999">#999999</color>
     <color name="titleText">#FFFFFF</color>

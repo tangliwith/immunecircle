@@ -2,6 +2,7 @@ package com.ecuca.immunecircle.ui.base;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -22,7 +23,7 @@ import butterknife.ButterKnife;
  * @param <V>
  * @param <T>
  */
-public abstract class BaseMvpActivity<V extends BaseActView, T extends BaseActPresenter<V>> extends Activity implements BaseActView {
+public abstract class BaseMvpActivity<V extends BaseActView, T extends BaseActPresenter<V>> extends AppCompatActivity implements BaseActView {
 
     public T presenter;
 
@@ -209,6 +210,19 @@ public abstract class BaseMvpActivity<V extends BaseActView, T extends BaseActPr
         mTvRight.setVisibility(View.VISIBLE);
         mTvRight.setText(str);
 
+    }
+
+    /**
+     * 设置底部按钮文字
+     *
+     * @param str
+     */
+    public void setBottomTextName(String str) {
+        TextView mTvRight = getID(R.id.app_text_bottom);
+        mTvRight.setVisibility(View.VISIBLE);
+        mTvRight.setText(str);
+        LinearLayout ll = getID(R.id.ll_app_text_bottom);
+        ll.setVisibility(View.VISIBLE);
     }
 
     //注册该界面，每个界面都要实现
